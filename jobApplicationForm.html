@@ -4,18 +4,94 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Job Application</title>
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+<style>
+	.jumbotron {
+		position: relative;
+		height: 200px;
+	}
+	.jumbotron:before {
+		content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+		background: url("ansible-banner1.jpg");
+		background-position: center;
+		opacity: 0.4;
+		width: 100%;
+    height: 100%;
+	}
+	fieldset {
+		border:  1px solid #ccc;
+		border-radius: 5px;
+		padding: 25px;
+		background-color: #d2e1dd;
+	}
+	legend {
+		background-color: #d2e1dd;
+		position: relative;
+		border:  1px solid #ccc;
+		border-bottom: 0;
+		border-radius: 5px;
+		padding: 5px 15px;
+		line-height: 18px;
+	}
+	legend:after {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		left: -1px;
+		right: -1px;
+		height: 13px;
+		z-index: 1;
+		border: none;
+		border-radius: 0 0 5px 5px;
+	}
+	body {
+		background-image: url('background.jpg');
+	}
+	.container {
+		position: relative;
+		background-color: white;
+		padding: 0 100px;
+		background-color: #d2e1aa;
+	}
+	table {
+		table-layout: fixed;
+    width: 100% !important;
+		white-space: nowrap;
+	}
+	td {
+		width: 12%;
+	}
+	.header {
+		margin-right: -100px;
+		margin-left: -100px;
+	}
+</style>
 <body>
 <div class="container">
+		<div class="row header">
+			<div class="jumbotron">
+				<h2 class="pull-left">Harbor View Medical Center Job Application</h2>
+				<div class="logo pull-right">
+					<img src="https://upload.wikimedia.org/wikipedia/en/8/88/HarborviewMC_Logo.png" alt="" width="150px">
+				</div>
+			</div>
+		</div>
 
-<h2>Job Application</h2>
 <p>&nbsp;</p>
 
 <form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
 
+
 	<fieldset class="form-horizontal" >
-		<legend>Account</legend>
+		<legend>
+			Account
+			<img src="https://png.icons8.com/syringe/win8/26" title="Syringe" width="26" height="26">
+		</legend>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Email</label>
 			<div class="col-sm-9">
@@ -39,7 +115,10 @@
 	<p>&nbsp;</p>
 
 	<fieldset class="form-horizontal" >
-		<legend>Personal Information</legend>
+		<legend>
+			Personal Information
+			<img src="https://png.icons8.com/syringe/win8/26" title="Syringe" width="26" height="26">
+		</legend>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Full name</label>
 			<div class="col-sm-9">
@@ -128,7 +207,10 @@
 	<p>&nbsp;</p>
 
 	<fieldset>
-		<legend>Availability</legend>
+		<legend>
+			Availability
+			<img src="https://png.icons8.com/syringe/win8/26" title="Syringe" width="26" height="26">
+		</legend>
 		<div class="form-group row">
 			<label class="col-sm-12 control-label">Are you legally able to be employed in this country?</label>
 			<div class="col-sm-offset-1 col-sm-11">
@@ -215,7 +297,10 @@
 	<p>&nbsp;</p>
 
 	<fieldset>
-		<legend>Personal Statement</legend>
+		<legend>
+			Personal Statement
+			<img src="https://png.icons8.com/syringe/win8/26" title="Syringe" width="26" height="26">
+		</legend>
 		<div class="form-group">
 			<label class="control-label">Why do you deserve this job?</label>
 			<textarea class="form-control" name="deserve" rows="6"></textarea>
